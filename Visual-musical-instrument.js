@@ -72,8 +72,8 @@ if (positionX[a] > width || positionX[a] < 0) {
  for (i = 0; i < circles.length; i++) {
   var circle = circles[i];
 	 if (circle.playing) {
-  stroke(255);
-	strokeWeight(1.5);
+  //stroke(255);
+	//strokeWeight(1.5);
    fill(circle.hue, 1, 1);
    ellipse(circle.x, circle.y, circle.size, circle.size);
   }
@@ -82,7 +82,8 @@ if (positionX[a] > width || positionX[a] < 0) {
 
 function keyPressed() {
  print("got key press for ", key);
-
+  stroke(255);
+	strokeWeight(1.5);
  for (i = 0; i < circles.length; i++) { 
   var circle = circles[i];
   if (circle.thekey == key) {
@@ -93,6 +94,8 @@ function keyPressed() {
 }
 
 function keyReleased() {
+	  stroke(255);
+	strokeWeight(0);
  print("got key release for ", key);
  for (i = 0; i < circles.length; i++) {
   var circle = circles[i];
