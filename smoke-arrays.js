@@ -7,7 +7,7 @@ var r = 0;
 function setup() {
   createCanvas(400, 400);
 
- for (var i = 0; i < 100; i = i + 1) {
+ for (var i = 0; i < 100; i++) {
   x[i] = 190;
   y[i] = random(0,100);
   r[i] = 0;
@@ -25,7 +25,7 @@ function draw() {
   rect(195, height, 30, -100);
 
   
-  for (var i = 0; i < 100; i = i + 1) {
+  for (var i = 0; i < 100; i++) {
   push();
   fill(y[i]);
   translate(x[i],y[i]);
