@@ -30,7 +30,7 @@ function draw() {
   fill(y[i]);
   translate(x[i],y[i]);
   rotate(r[i]);
-  rect(-10, -10, 20, 20);
+  rect(-5, -5, 10, 10);
   pop();
   x[i] += xSpeed[i];
   y[i] -= ySpeed[i];
